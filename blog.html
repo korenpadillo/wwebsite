@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Can You Really Spot a Deepfake? — Koren</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="color.css">
+</head>
+<body class="theme-professional">
+	<div class="frame">
+		<header class="top">
+			<div class="logo"><a href="index.html">koren</a></div>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="index.html#projects">Projects</a>
+				<a href="index.html#blog">Blog</a>
+			</nav>
+		</header>
+
+		<main class="main" style="padding:36px 20px;">
+			<article class="card featured-article" style="padding:28px;">
+				<div class="featured-container" style="grid-template-columns:1fr;gap:20px;">
+					<div style="width:100%; overflow:hidden; border-radius:12px;">
+						<img src="img/blog_img.avif" alt="Featured Deepfake article" style="width:100%;height:auto;display:block;object-fit:cover;">
+					</div>
+					<div class="featured-content">
+						<span class="featured-tag">Featured</span>
+						<h1 style="margin-top:6px;">Can You Really Spot a Deepfake? Here's What Science Says</h1>
+						<p class="featured-meta">By Koren • December 18, 2024 • 8 min read</p>
+
+						<p class="featured-excerpt">As AI-generated faces become indistinguishable from reality, researchers are developing new methods to detect them. This article explores how deepfakes are made, what detection science can (and cannot) do, and practical steps you can take to evaluate media critically.</p>
+					</div>
+
+					<div style="grid-column:1 / -1; padding-top:6px;">
+						<section class="article-body">
+							<h2>Introduction</h2>
+							<p>Deepfakes are synthetic media created by AI systems—often generative adversarial networks (GANs) or diffusion models—that can swap faces, alter voices, or fabricate events. As these models improve, visual artifacts that once gave them away are becoming rarer. That raises the question: can humans still reliably tell real from fake?</p>
+
+							<h3>How deepfakes are made</h3>
+							<p>Most deepfakes start with large datasets of images or audio. Models learn statistical patterns and reproduce them; the better the training data and compute, the more believable the output. Simple face swaps used to result in ghosting or mismatched lighting; modern systems can synthesize consistent lighting, skin texture, and expression.</p>
+
+							<h3>What science can detect</h3>
+							<p>Researchers look for subtle traces: inconsistencies in eye reflections, unnatural head motion, or frequency-domain artifacts introduced during synthesis. Detection models trained on known AI outputs can flag many fakes, but they often degrade when faced with new generation techniques or heavy post-processing (compression, filters).</p>
+
+							<h3>Tools and practical checks</h3>
+							<ul>
+								<li>Verify the source: prefer primary outlets and reverse-image search for suspicious frames.</li>
+								<li>Look for context: inconsistencies in audio, timestamps, or quoted facts suggest manipulation.</li>
+								<li>Use multiple detection tools as a sanity check—no single tool is definitive.</li>
+							</ul>
+
+							<h3>The research arms race</h3>
+							<p>Detection and generation advance together. When a detector finds a reliable signal, generation techniques often adapt to hide that signal. This cat-and-mouse dynamic means long-term solutions will likely combine technical defenses, provenance standards, and human-centered verification practices.</p>
+
+							<h3>Conclusion — what you can do</h3>
+							<p>Be skeptical of sensational media, cross-check primary sources, and use verification tools responsibly. For publishers and platforms, investing in provenance metadata and clear labeling is key to maintaining trust.</p>
+
+							<p style="margin-top:18px;"><a href="index.html" class="btn-secondary">← Back to Home</a></p>
+						</section>
+					</div>
+				</div>
+			</article>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h3>About This Site</h3>
+					<p>Student project showcasing research and projects.</p>
+					<p class="credit">© 2025 Koren.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
+

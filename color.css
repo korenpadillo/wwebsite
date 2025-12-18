@@ -1,0 +1,111 @@
+:root{
+  /* Generic tokens */
+  --white: #ffffff;
+  --black: #000000;
+  --page-padding: 20px;
+  --max-width: 1200px;
+  --gap: 20px;
+  --radius: 10px;
+  --shadow: 0 8px 30px rgba(0,0,0,0.25);
+
+  /* Fallback (used when no theme class is present) */
+  /* replace vivid/pastel defaults with neutral professional tokens */
+  --bg: #0f1724; /* deep charcoal */
+  --nav-start: rgba(15,23,36,0.95);
+  --nav-end: rgba(18,38,56,0.95);
+  --text: #E6EEF6; /* soft off-white */
+  --accent-primary: #1E90FF; /* calm blue */
+  --accent-secondary: #0b2a4a; /* deep blue accent */
+  --card-bg: rgba(255,255,255,0.03);
+  --card-border: rgba(255,255,255,0.04);
+  --glass-blur: 8px;
+
+  /* glassmorphism / background helpers (professional) */
+  --bg-gradient-start: #0f1724;
+  --bg-gradient-end: #071327;
+  --bg-spot-1: rgba(30,144,255,0.06); /* soft blue highlight */
+  --bg-spot-2: rgba(255,255,255,0.02); /* soft light wash */
+  --bg-noise-alpha: 0.02; /* subtle noise/texture strength if needed */
+}
+
+/* NEW THEME: Professional / Corporate */
+.theme-professional {
+  --bg: #0f1724;
+  --nav-start: #0f1724;
+  --nav-end: #12263b;
+  --text: #E6EEF6;
+  --accent-primary: #1E90FF;
+  --accent-secondary: #0b2a4a;
+  --card-bg: rgba(255,255,255,0.03);
+  --card-border: rgba(255,255,255,0.05);
+  --glass-blur: 8px;
+
+  /* ensure professional theme also exposes new helpers (optional override) */
+  --bg-gradient-start: #0f1724;
+  --bg-gradient-end: #071327;
+  --bg-spot-1: rgba(30,144,255,0.06);
+  --bg-spot-2: rgba(255,255,255,0.02);
+}
+
+/* THEME: High-Contrast "Action" */
+.theme-action {
+  --bg: rgba(11, 7, 16, 0.9); /* slightly lower opacity for a more subtle background */
+  --nav-start: #0b1a00; /* subtle dark -> to make neon stand out */
+  --nav-end: #002200;
+  --text: #F0F0F0; /* Off-white for headings & UI */
+  --accent-primary: #39FF14; /* Neon Green */
+  --accent-secondary: #FFD300; /* Cyber Yellow */
+  --card-bg: rgba(0,0,0,0.55); /* darker glass so neon pops */
+  --card-border: rgba(57,255,20,0.85);
+  --glass-blur: 8px;
+}
+
+/* THEME: Vaporwave/Dreamy */
+.theme-vaporwave {
+  --bg: rgba(16, 2, 26, 0.9); /* slightly lower opacity for a more subtle background */
+  --nav-start: #00ffff; /* cyan start */
+  --nav-end: #ff00ff;   /* hot pink end */
+  --text: #E0FFFF;      /* Ice blue body text */
+  --accent-primary: #00FFFF; /* Cyan */
+  --accent-secondary: #FF00FF; /* Hot Pink */
+  --card-bg: rgba(218,188,255,0.10); /* light purple glass */
+  --card-border: rgba(255,255,255,0.08);
+  --glass-blur: 12px;
+}
+
+/* THEME: Luxury Dark */
+.theme-luxury {
+  --bg: rgba(7, 6, 6, 0.9); /* slightly lower opacity for a more subtle background */
+  --nav-start: rgba(212,175,55,0.12); /* subtle gold sheen */
+  --nav-end: rgba(212,175,55,0.04);
+  --text: #C0C0C0; /* Silver text */
+  --accent-primary: #D4AF37; /* Gold */
+  --accent-secondary: #121212; /* Deep charcoal boxes */
+  --card-bg: rgba(255,255,255,0.03); /* very subtle glass on dark */
+  --card-border: rgba(212,175,55,0.28); /* thin gold border */
+  --glass-blur: 6px;
+}
+/* Small theme-specific embellishments */
+.theme-action .top a:hover { background: rgba(57,255,20,0.08); color: var(--black); }
+.theme-vaporwave .top a:hover { background: rgba(0,255,255,0.08); color: var(--black); }
+.theme-luxury .top a:hover { background: rgba(212,175,55,0.06); color: var(--text); }
+
+/* Professional theme hover / CTA refinements */
+.theme-professional .top a:hover {
+  background: rgba(30,144,255,0.08); /* soft blue highlight */
+  color: var(--text);
+}
+.theme-professional a.btn-cta {
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(14,40,80,0.25);
+}
+
+.theme-transition {
+  transition: background .35s ease, color .35s ease, border-color .35s ease;
+}
+
+
+/* Accent utilities */
+.kv-accent { color: var(--accent-primary); font-weight: 800; }
+.secondary-accent { color: var(--accent-secondary); font-weight: 700; }

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>Koren - AI & Digital Innovation</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="color.css">
+</head>
+<body>
+  <div class="frame">
+    <!-- <video id="myVideo" autoplay muted loop playsinline>
+  <source src="img/bg.mp4" type="video/mp4"> -->
+  
+                  
+    <header class="top">
+      <div class="logo"><a href="#">koren</a></div>
+      <nav>
+        <a href="#blog">📝 Blog</a>
+        <a href="#projects">🎨 Projects</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- NEW: landing hero (covers viewport below the top bar) -->
+      <section class="landing">
+        <!-- full-bleed image with gradient overlay -->
+        <div class="landing-bg">
+          <img src="img/blog_img.avif" alt="Humanity vs Technology - AI face comparison" class="landing-img">
+          <div class="landing-overlay"></div>
+        </div>
+        
+        <!-- centered content above the image -->
+        <div class="landing-content">
+          <div class="landing-text">
+            <h1 class="landing-headline">The Truth in the Age of AI</h1>
+            <p class="landing-subheading">Learning to see through the digital veil. Can you tell the difference?</p>
+            <p class="landing-description">If you've ever looked at a photo and wondered if it was actually human—you're in the right place.</p>
+            <a href="#intro" class="btn-cta btn-primary">Start Exploring the Future</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED DEEP DIVE ARTICLE -->
+      <section class="blog-grid" id="blog">
+        <div class="section-header">
+          <h2> blogs and Trends</h2>
+          <p>Emerging technologies</p>
+        </div>
+
+        <div class="cards-wrapper">
+          <div class="cards-grid">
+            <!-- Card 1: AI (only AI post) -->
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="img/iot_devices.avif" alt="The Ethics of Deepfakes in 2024" class="card-img">
+                <span class="read-time">5 min</span>
+              </div>
+              <div class="card-content">
+                <h3>The Ethics of Deepfakes in 2024</h3>
+                <p class="card-date">Oct 24, 2024</p>
+                <p class="card-excerpt">As deepfake technology becomes more accessible, we explore the ethical implications, regulatory challenges, and how society can adapt.</p>
+                  <a href="article-ethics.html" class="card-link">Read More →</a>
+              </div>
+            </article>
+
+            <!-- Card 2: Design -->
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="img/Gemini_Generated_Image_vct18zvct18zvct1.png" alt="Designing for Accessibility" class="card-img">
+                <span class="read-time">4 min</span>
+              </div>
+              <div class="card-content">
+                <h3>Designing for Accessibility</h3>
+                <p class="card-date">Nov 2, 2024</p>
+                <p class="card-excerpt">Small design decisions that make products usable by everyone—practical tips for inclusive interfaces.</p>
+                  <a href="article-accessibility.html" class="card-link">Read More →</a>
+              </div>
+            </article>
+
+            <!-- Card 3: Engineering -->
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="img/Gemini_Generated_Image_owf34xowf34xowf3.png" alt="Serverless Workflows for Startups" class="card-img">
+                <span class="read-time">6 min</span>
+              </div>
+              <div class="card-content">
+                <h3>Serverless Workflows for Startups</h3>
+                <p class="card-date">Nov 15, 2024</p>
+                <p class="card-excerpt">How to design fast, cost-effective backend flows using serverless primitives and event-driven patterns.</p>
+                  <a href="article-serverless.html" class="card-link">Read More →</a>
+              </div>
+            </article>
+
+            <!-- Card 4: Deepfakes in Politics (moved into carousel) -->
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="img/benefits-of-using-AI-writing-tools.png" alt="Deepfakes in Politics: What We Learned in 2024" class="card-img">
+                <span class="read-time">10 min</span>
+              </div>
+              <div class="card-content">
+                <h3>Deepfakes in Politics: What We Learned in 2024</h3>
+                <p class="card-date">Dec 1, 2024</p>
+                <p class="card-excerpt">A review of the most impactful incidents and lessons for media, policy, and verification.</p>
+                  <a href="article-deepfakes-politics.html" class="card-link">Read More →</a>
+              </div>
+            </article>
+
+            <!-- Card 5: Tools to Detect AI-Generated Content (moved into carousel) -->
+            <article class="blog-card">
+              <div class="card-image">
+                <img src="img/blog_img.avif" alt="Tools I Use to Detect AI-Generated Content" class="card-img">
+                <span class="read-time">7 min</span>
+              </div>
+              <div class="card-content">
+                <h3>Tools I Use to Detect AI-Generated Content</h3>
+                <p class="card-date">Dec 10, 2024</p>
+                <p class="card-excerpt">A practical toolkit for spotting synthetic media, with lightweight checks you can run in seconds.</p>
+                  <a href="article-tools-detect.html" class="card-link">Read More →</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-controls">
+            <button id="prevCard" aria-label="Previous article">‹</button>
+            <button id="nextCard" aria-label="Next article">›</button>
+          </div>
+        </div>
+      &nbsp;
+
+
+      
+      <section class="intro" id="intro">
+        <div class="intro-content">
+          <h2>Let's Connect!</h2>
+          <p>I'm currently exploring opportunities in AI & Web Development. If you're interested in my work or want to collaborate, reach out!</p>
+          <div class="button-group">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-download">📄 Download Resume</a>
+            <a href="https://github.com/korenpadillo" target="_blank" rel="noopener noreferrer"class="btn-secondary btn-social">🔗 Github Profile</a>
+          </div>
+        </div>
+      </section>
+&nbsp;
+      <!-- SLIDESHOW: Project Showcase -->
+      <section class="slideshow">
+        <div class="slideshow-header">
+          <h2>Project Showcase</h2>
+          <p>Carousel of my best work and featured projects</p>
+        </div>
+        &nbsp;
+        <div class="carousel-placeholder">
+          <span>🎨 Your project screenshots & designs will go here</span>
+
+        </div>
+      </section>
+&nbsp;
+      <!-- ABOUT: Student Journey -->
+      <section class="about">
+        <div class="about-content">
+          <h2>My Journey Through AI & Digital Innovation</h2>
+          <p>Hi, I'm <strong>Koren C. Padillo</strong>, a passionate Student From Mindanao State University. I started this website to document my learning journey and share insights and project on emerging technologies.</p>
+          <p>Through this platform, I break down complex AI concepts, explore ethical implications, and challenge conventional thinking about technology and society. Whether you're a fellow student, tech enthusiast, or industry professional, I hope you'll find value in the conversations we're building together.</p>
+          <!-- <div class="cta-section">
+            <a href="#" class="btn-primary">Subscribe for Weekly Insights</a>
+          </div> -->
+        </div>
+      </section>
+&nbsp;
+      <!-- FOOTER: Professional Credits & Links -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Platforms</h3>
+            <ul>
+              <li><a target="_blank" rel="noopener noreferrer" href="https://github.com" target="_blank">🐙 GitHub</a></li>
+              <li><a target="_blank" rel="noopener noreferrer" href="https://linkedin.com" target="_blank">🔗 LinkedIn</a></li>
+              <li><a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">✉️ korenpadillo103@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>About This Site</h3>
+            <p>CCC100  website project.</p>
+            <p class="credit">© 2025 Koren.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="index.js"></script>
+
+  <!-- Inline module: Three.js scene + GLTF loader for landing canvas -->
+  <script type="module">
+  import * as THREE from 'https://unpkg.com/three@0.152.2/build/three.module.js';
+  import { GLTFLoader } from 'https://unpkg.com/three@0.152.2/examples/jsm/loaders/GLTFLoader.js';
+
+  const canvas = document.getElementById('landing-canvas');
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true, powerPreference: 'high-performance' });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.setClearColor(0x000000, 0); // transparent so theme bg/video shows through
+
+  const scene = new THREE.Scene();
+
+  const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+  camera.position.set(0, 1.2, 3);
+
+  // lights
+  scene.add(new THREE.AmbientLight(0xffffff, 0.8));
+  const dir = new THREE.DirectionalLight(0xffffff, 0.6);
+  dir.position.set(5, 10, 7);
+  scene.add(dir);
+
+  let model = null;
+  let mixer = null;
+
+  const loader = new GLTFLoader();
+  loader.load(
+    'rot/scene.gltf',
+    gltf => {
+      model = gltf.scene || gltf.scenes[0];
+      // center model
+      const box = new THREE.Box3().setFromObject(model);
+      const size = box.getSize(new THREE.Vector3()).length();
+      const center = box.getCenter(new THREE.Vector3());
+      model.position.sub(center); // recenter to origin
+      const scale = Math.min(1.5 / Math.max(size, 0.0001), 1);
+      model.scale.setScalar(scale);
+
+      scene.add(model);
+
+      // if model contains animations, play them
+      if (gltf.animations && gltf.animations.length) {
+        mixer = new THREE.AnimationMixer(model);
+        gltf.animations.forEach((clip) => {
+          const action = mixer.clipAction(clip);
+          action.reset();
+          action.play();
+        });
+      }
+    },
+    undefined,
+    () => {
+      // fallback geometry if load fails
+      const geo = new THREE.TorusKnotGeometry(0.6, 0.18, 128, 24);
+      const mat = new THREE.MeshStandardMaterial({ color: 0xd4af37, metalness: 0.4, roughness: 0.2 });
+      model = new THREE.Mesh(geo, mat);
+      scene.add(model);
+    }
+  );
+
+  // Use ResizeObserver to accurately size the renderer to the landing area
+  const ro = new ResizeObserver(() => {
+    const parent = canvas.parentElement;
+    const w = Math.max(1, Math.floor(parent.clientWidth * (window.devicePixelRatio || 1)));
+    const h = Math.max(1, Math.floor(parent.clientHeight * (window.devicePixelRatio || 1)));
+    // setSize with false to avoid changing canvas style size
+    renderer.setSize(Math.floor(parent.clientWidth), Math.floor(parent.clientHeight), false);
+    camera.aspect = parent.clientWidth / Math.max(1, parent.clientHeight);
+    camera.updateProjectionMatrix();
+  });
+  ro.observe(canvas.parentElement);
+
+  // fallback resize on window change
+  window.addEventListener('resize', () => ro.observe(canvas.parentElement));
+
+  // animation loop
+  const clock = new THREE.Clock();
+  function animate() {
+    requestAnimationFrame(animate);
+    const delta = clock.getDelta();
+    if (mixer) mixer.update(delta);
+    if (model && !mixer) {
+      model.rotation.y += 0.5 * delta;
+      model.rotation.x += 0.08 * delta;
+    }
+    renderer.render(scene, camera);
+  }
+  // start loop
+  animate();
+  </script>
+  <script>
+  // Carousel: show 3 cards at once, slide by one
+  (function(){
+    const grid = document.querySelector('.cards-grid');
+    const prev = document.getElementById('prevCard');
+    const next = document.getElementById('nextCard');
+    if (!grid || !prev || !next) return;
+    const slides = grid.children.length;
+    const visible = 3;
+    const maxIndex = Math.max(0, slides - visible);
+    let idx = 0;
+    function update(){
+      const shift = (idx * (100 / visible));
+      grid.style.transform = `translateX(-${shift}%)`;
+    }
+    prev.addEventListener('click', ()=>{ idx = (idx - 1 < 0) ? maxIndex : idx - 1; update(); });
+    next.addEventListener('click', ()=>{ idx = (idx + 1 > maxIndex) ? 0 : idx + 1; update(); });
+    // keyboard navigation
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'ArrowLeft') prev.click();
+      if(e.key === 'ArrowRight') next.click();
+    });
+    // initialize
+    update();
+    // adjust on resize to ensure layout stays correct
+    window.addEventListener('resize', update);
+  })();
+  </script>
+</body>
+</html>
