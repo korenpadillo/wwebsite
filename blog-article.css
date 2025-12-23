@@ -1,0 +1,88 @@
+/* Blog Article Styles - Responsive */
+
+.main-blog {
+  padding: 36px 20px;
+}
+
+.featured-article {
+  padding: 28px;
+}
+
+.featured-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.featured-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.featured-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.article-body-wrapper {
+  grid-column: 1 / -1;
+  padding-top: 6px;
+}
+
+.article-body a.btn-secondary {
+  margin-top: 18px;
+}
+
+/* Responsive adjustments for blog pages */
+@media (max-width: 900px) {
+  .main-blog {
+    padding: 28px 16px;
+  }
+
+  .featured-article {
+    padding: 24px;
+  }
+
+  .featured-container {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-blog {
+    padding: 20px 12px;
+  }
+
+  .featured-article {
+    padding: 16px;
+  }
+
+  .featured-container {
+    gap: 12px;
+  }
+
+  .featured-image-wrapper {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-blog {
+    padding: 16px 10px;
+  }
+
+  .featured-article {
+    padding: 12px;
+  }
+
+  .featured-container {
+    gap: 8px;
+  }
+
+  .featured-image-wrapper {
+    border-radius: 6px;
+  }
+}
