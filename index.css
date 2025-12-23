@@ -743,7 +743,7 @@ a.btn-cta {
 }
 
 /* Use the card styles */
-.intro {  }
+
 .slideshow {  display:flex; flex-direction: column; align-items:center; justify-content:center; }
 .about {  grid-column: 1 / -1; }
 .footer {  grid-column: 1 / -1; min-height: 120px; }

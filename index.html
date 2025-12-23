@@ -294,24 +294,42 @@
     const next = document.getElementById('nextCard');
     if (!grid || !prev || !next) return;
     const slides = grid.children.length;
-    const visible = 3;
-    const maxIndex = Math.max(0, slides - visible);
+
+    function getVisibleCount(){
+      const w = window.innerWidth;
+      if (w >= 900) return 3;
+      if (w >= 640) return 2;
+      return 1;
+    }
+
+    let visible = getVisibleCount();
+    let maxIndex = Math.max(0, slides - visible);
     let idx = 0;
+
     function update(){
+      visible = getVisibleCount();
+      maxIndex = Math.max(0, slides - visible);
+      if (idx > maxIndex) idx = maxIndex;
       const shift = (idx * (100 / visible));
       grid.style.transform = `translateX(-${shift}%)`;
     }
+
     prev.addEventListener('click', ()=>{ idx = (idx - 1 < 0) ? maxIndex : idx - 1; update(); });
     next.addEventListener('click', ()=>{ idx = (idx + 1 > maxIndex) ? 0 : idx + 1; update(); });
+
     // keyboard navigation
     document.addEventListener('keydown', (e)=>{
       if(e.key === 'ArrowLeft') prev.click();
       if(e.key === 'ArrowRight') next.click();
     });
-    // initialize
+
+    // initialize and update on resize (debounced)
     update();
-    // adjust on resize to ensure layout stays correct
-    window.addEventListener('resize', update);
+    let resizeTimer;
+    window.addEventListener('resize', ()=>{
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(update, 120);
+    });
   })();
   </script>
 </body>
